@@ -10,11 +10,11 @@ def load_library(file)
   newhash
 end
 def get_japanese_emoticon(file,emoticon)
-answer=load_library(file)["get_emoticon"][emoticon]
-if answer.nil?
-"Sorry, that emoticon was not found"
-else answer
-end
+  answer=load_library(file)["get_emoticon"][emoticon]
+  if answer.nil?
+    "Sorry, that emoticon was not found"
+  else answer
+  end
 end
 
 def get_english_meaning
