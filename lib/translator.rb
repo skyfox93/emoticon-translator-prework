@@ -5,7 +5,7 @@ def load_library(file)
   newhash={"get_meaning"=> {}, "get_emoticon" => {}}
   stuff.each do|meaning,emoticons|
     newhash["get_meaning"][emoticons[1]]=meaning
-    newhash["get_emoticon"][emoticons[0]]=[emoticons[1]]
+    newhash["get_emoticon"][emoticons[0]]=emoticons[1]
   end
   newhash
 end
