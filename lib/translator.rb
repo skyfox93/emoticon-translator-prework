@@ -10,7 +10,7 @@ def load_library(file)
   newhash
 end
 def get_japanese_emoticon(file,emoticon)
-load_library(file)[get_japanese_emoticon]
+load_library(file)[emoticon]
 
 end
 
@@ -18,4 +18,4 @@ def get_english_meaning
   # code goes here
 end
 
-puts load_library("./lib/emoticons.yml")
+puts get_japanese_emoticon("./lib/emoticons.yml")
