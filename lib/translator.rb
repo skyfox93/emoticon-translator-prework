@@ -18,7 +18,11 @@ def get_japanese_emoticon(file,emoticon)
 end
 
 def get_english_meaning(file,emoticon)
-
+  answer=load_library(file)["get_emoticon"][emoticon]
+  if answer.nil?
+    "Sorry, that emoticon was not found"
+  else answer
+  end
 end
 
 puts get_japanese_emoticon("./lib/emoticons.yml",":)")
