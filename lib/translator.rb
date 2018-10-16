@@ -10,7 +10,8 @@ def load_library(file)
   newhash
 end
 def get_japanese_emoticon(file,emoticon)
-load_library(file)["get_emoticon"][emoticon]
+answer=load_library(file)["get_emoticon"][emoticon]
+"Sorry, that emoticon was not found"
 
 end
 
