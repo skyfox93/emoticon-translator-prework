@@ -12,7 +12,7 @@ end
 def get_japanese_emoticon(file,emoticon)
 answer=load_library(file)["get_emoticon"][emoticon]
 "Sorry, that emoticon was not found"
-answer if! answer.nil?
+answer if !answer.nil?
 end
 
 def get_english_meaning
